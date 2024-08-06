@@ -426,10 +426,10 @@ Route::group([], function () {
 
             Route::get('/admin/bookings', [BookingController::class,'index'])->name('admin.booking.list')->middleware('permission:Booking List');
             Route::get('/admin/bookings-detail/{booking_id}', [BookingController::class,'BookingDetail'])->name('admin.booking.detail')->middleware('permission:Booking List');
-            Route::get('/admin/generate-ticket/{booking_id}', [BookingController::class,'GenerateTicket'])->name('admin.booking.generate_ticket')->middleware('permission:Generate Ticket');
             Route::get('/admin/bookings/search', [BookingController::class,'search_bookings'])->name('admin.booking.search')->middleware('permission:Booking List');
             Route::get('/admin/bookings/card', [BookingController::class,'booking_card'])->name('admin.booking.card')->middleware('permission:Booking List');
             Route::post('/admin/create-ticket', [BookingController::class,'CreateTicket'])->name('admin.booking.create.ticket')->middleware('permission:Booking List');
+            Route::get('/admin/view-ticket/{rootkey}', [BookingController::class,'ViewTicket'])->name('admin.booking.view_ticket')->middleware('permission:Booking List');
     
         });
 

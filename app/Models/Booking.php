@@ -24,7 +24,7 @@ class Booking extends Model
     }
     public function booking_root()
     {
-        return $this->hasMany('App\Models\BookingRoot','booking_id','booking_id');
+        return $this->hasMany('App\Models\BookingRoot','booking_id','booking_id')->with('root_ticket');
     }
     public function booking_travellers()
     {

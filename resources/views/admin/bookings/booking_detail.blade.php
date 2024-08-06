@@ -886,20 +886,39 @@ table.table.border.ticket_table th {
                                                             </tr>
                                                         </thead>
                                                         <tbody>
+                                                            @php 
+                                                                $is_empty = 1;
+                                                            @endphp
                                                             @foreach($booking->booking_root as $rootkey)
-                                                            <tr>
-                                                                <td>{{$rootkey->bookingroot}}</td>
-                                                                <td>{{$rootkey->flight_depart_date}}</td>
-                                                                <td>{{$rootkey->flight_depart_date}}</td>
-                                                                <td>{{$booking->status}}</td>
-                                                                <td><i class="menu-icon icon mdi mdi-download"></i>
-                                                                <i class="menu-icon icon mdi mdi-eye"></i>
-                                                                </td>
-                                                            </tr>
+                                                                @php 
+                                                                    $is_generated = 0;
+                                                                    foreach($rootkey->root_ticket as $ticket)
+                                                                    {
+                                                                        if($ticket->booking_root == $rootkey->bookingroot)
+                                                                        {
+                                                                            $is_generated = 1;
+                                                                            $is_empty = 0;
+                                                                        }
+                                                                    }
+                                                                @endphp
+                                                                @if($is_generated == 1)
+                                                                    <tr>
+                                                                        <td>{{$rootkey->bookingroot}}</td>
+                                                                        <td>{{$rootkey->flight_depart_date}}</td>
+                                                                        <td>{{$rootkey->flight_depart_date}}</td>
+                                                                        <td>{{$booking->status}}</td>
+                                                                        <td><i class="menu-icon icon mdi mdi-download"></i>
+                                                                            <a target="_blank" href="{{route('admin.booking.view_ticket',$rootkey->id)}}"><i class="menu-icon icon mdi mdi-eye"></i></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                @endif
                                                             @endforeach
-                                                           <tr>
-                                                                <td colspan="5" class="client-name text-center">No Data Found</td>
-                                                            </tr>
+                                                            
+                                                            @if($is_empty == 1)
+                                                                <tr>
+                                                                    <td colspan="5" class="client-name text-center">No Data Found</td>
+                                                                </tr>
+                                                            @endif
                                                         
                                                         </tbody>
                                                         </table>

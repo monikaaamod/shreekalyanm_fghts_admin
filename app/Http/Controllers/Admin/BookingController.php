@@ -95,6 +95,16 @@ class BookingController extends BaseController
         // print_r($data['booking']);exit;
         return view('admin.bookings.booking_detail',$data);
     }
+    
+    public function ViewTicket($rootkey)
+    {
+        $data['booking_root'] = BookingRoot::with('root_ticket')->find($rootkey);
+        $data['booking'] = Booking::with('booking_root','booking_travellers')->where('booking_id',$data['booking_root']->booking_id)->first();
+        $data['FlightDetailArray'] = unserialize(base64_decode($data['booking']->flightsDataArray));
+        
+        // print_r($data['FlightDetailArray']);exit;
+        return view('admin.bookings.view_ticket',$data);
+    }
 
 
     public function search_bookings()
@@ -166,6 +176,11 @@ class BookingController extends BaseController
             $ticket->booking_status = 'Tickted';
             $ticket->save();
         }
+        
+        $bookingdetail = BookingRoot::where('booking_root',$request->booking_root)->where('booking_id',$request->booking_id)->first();
+        $bookingdetail->pnr_no = $request->pnr_no;
+        $bookingdetail->save();
+        
         
         $roots = BookingRoot::where('booking_id',$request->booking_id)->get();
         foreach($roots as $key=>$root)
