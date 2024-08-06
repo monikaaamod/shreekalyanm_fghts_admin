@@ -1,0 +1,308 @@
+
+@media(max-width:1440px){
+.helpb button {
+    width: 32%;
+}
+/*deshboard and*/
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:1300px){
+
+}
+
+@media(max-width:1200px){
+
+}
+
+
+@media(max-width:1199.98px){
+    .helpButton {
+    text-align: left;
+}
+.logo img {
+    position: relative;
+    right: 20px;
+    width: 20px
+}
+.logo img:first-child {
+  width: 70px;
+  height: 30px;
+}
+.img-icon img:first-child {
+  width: 20px !important;
+  height: 20px !important
+}
+.img-icon {
+    padding-left: 11px;
+}
+.tabes li{
+}
+section.backupdate {
+    padding: 20px 0px;
+}
+ul.listing {
+    margin: 10px 0px 0px 0px;
+    max-height: 356px;
+}
+img.fullimages {
+    height: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.listing p {
+    font-size: 13px;
+}
+.listing p {
+    margin-bottom: 5px;
+}
+.listing li {
+    font-size: 15px;
+    padding-bottom: 22px;
+}
+.sliders .carousel-item {
+    height: 150px;
+}
+.helpb button {
+    width: 50%;
+    margin-top: 40px;
+}
+section.helpb {
+    padding: 23px 0px;
+    text-align: right;
+}
+.pragraf {
+    width: 100%;
+    float: right;
+}
+/*deshboard and*/
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:991.98px){
+        .helpButton {
+    text-align: left;
+}
+img.fullimages {
+    height: 200px;
+    margin-top: 11px;
+}
+.logo img {
+    position: relative;
+    right: 20px;
+    width: 20px
+}
+.logo img:first-child {
+  width: 70px;
+  height: 30px;
+}
+.img-icon img:first-child {
+  width: 20px !important;
+  height: 20px !important
+}
+.img-icon {
+    padding-left: 11px;
+}
+.tabes li{
+	width: calc(100% / 2 - 10px);
+}
+section.backupdate {
+    padding: 20px 0px;
+}
+ul.listing {
+    margin: 10px 0px 0px 0px;
+    max-height: 300px;
+}
+
+.listing p {
+    font-size: 13px;
+}
+.sliders .carousel-item {
+    height: 150px;
+}
+.helpb button {
+    width: 50%;
+    margin-top: 40px;
+}
+section.helpb {
+    padding: 23px 0px;
+    text-align: right;
+}
+.tabes li {
+    width: 15%;
+}
+/*deshboard and*/
+
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:768px){
+   .listing li {
+    font-size: 15px;
+    padding-bottom: 34px;
+}
+ul.listing {
+    max-height: 422px;
+}
+.listing li {
+    padding-bottom: 5px;
+}
+.listing p {
+    font-size: 14px;
+}
+.tabes li {
+    width: 15%;
+}
+.helpb .fa-solid, .fas {
+    width: 21%;
+}
+/*deshboard and*/
+
+.Gallerys i.fa-solid.fa-arrow-up-from-bracket {
+    margin-top: 19px;
+}
+.Neon-input-dragDrop {
+    display: block;
+    width: 162px;
+    height: 111px;
+}
+.Gallerys li {
+    height: 117px;
+    width: 168px;
+}
+
+
+
+
+
+
+}
+
+@media(max-width:575.98px){
+       .listing li {
+    font-size: 15px;
+    padding-bottom: 34px;
+}
+.helpb .fa-solid, .fas {
+    width: 15%;
+}
+ul.listing {
+    max-height: 422px;
+}
+.listing li {
+    padding-bottom: 5px;
+}
+.listing p {
+    font-size: 14px;
+}
+.tabes li {
+    width: 23%;
+}
+.pragraf {
+    width: 51%;
+    display: contents;
+}
+.listing p {
+    font-size: 14px;
+    padding-top: 8px;
+}
+.helpb button {
+    width: 35%;
+}
+/*deshboard and*/
+
+
+
+
+
+
+
+
+
+}
+@media(max-width:479px){
+    
+	.tabes li {
+    width: 48%;
+}
+/*deshboard and*/
+
+.Gallerys li {
+    height: 93px;
+    width: 126px;
+}
+.Neon-input-dragDrop {
+    display: block;
+    width: 118px;
+	height: 82px;
+}
+.Gallerys i.fa-solid.fa-arrow-up-from-bracket {
+    margin-top: 4px;
+}
+
+
+
+
+}
+@media (max-width: 375px) {
+.Gallerys i.fa-solid.fa-arrow-up-from-bracket {
+    margin-top: 19px;
+}
+.Neon-input-dragDrop {
+    display: block;
+    width: 162px;
+    height: 111px;
+}
+.Gallerys li {
+    height: 117px;
+    width: 168px;
+}	
+ }
+@media (max-width: 320px) { 
+
+.tabes li {
+    width: 47%;
+}
+.helpb .fa-solid, .fas {
+    width: 22%;
+}
+/*deshboard*/
+.Gallerys li {
+    height: 98px;
+    width: 139px;
+}
+.Neon-input-dragDrop {
+    display: block;
+    width: 134px;
+    height: 92px;
+}
+.Gallerys i.fa-solid.fa-arrow-up-from-bracket {
+    margin-top: 9px;
+}
+
+
+
+}
+

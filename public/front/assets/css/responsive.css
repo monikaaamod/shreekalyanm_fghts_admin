@@ -1,0 +1,431 @@
+@media (max-width:1400px) {
+    .trpbook .owl-next {
+        right: 0px;
+    }
+
+    .trpbook .owl-prev {
+        left: 0;
+    }
+
+    .frm-select {
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width:1200px) {
+    .theame-header .custom-nav .nav-item {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .theame-header .tp-header-rgt li a {
+        font-size: 15px;
+        padding: 0px 8px;
+    }
+
+    .theame-header .tp-header-rgt li button {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+
+    .offr-tb-innr-contnt h5 {
+        font-size: 14px;
+    }
+
+    .thm-btn, .thm-shrt-btn {
+        padding: 7px 20px;
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width:1100px) {
+    .theame-header .custom-nav .nav-item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .theame-header .custom-nav .nav-item .nav-link {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width:992px) {
+
+    /*.theame-header .tp-header {
+        display: none;
+    }*/
+    .theame-header .tp-header .yotub, .theame-header .tp-header .brand img {
+        display: none;
+    }
+
+    .custom-nav .navbar-brand img {
+        display: block;
+    }
+
+    .theame-header .custom-nav .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .theame-header .custom-nav {
+        padding: 5px 0;
+    }
+
+    .theame-header .custom-nav .navbar-toggler {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        width: 46px;
+        height: 44px;
+        padding: 0 10px;
+        background-color: #fff;
+        border-radius: 4px;
+        text-align: center;
+        border: none;
+        outline: none;
+        z-index: 110;
+    }
+
+    .theame-header .custom-nav .navbar-toggler span {
+        width: 29px;
+        height: 3px;
+        background: #ED9323;
+        display: block;
+        margin: 3px auto 3px auto;
+        position: relative;
+        top: 0;
+        opacity: 1;
+        float: right;
+        transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+        border-radius: 10px;
+    }
+
+    .theame-header .custom-nav .navbar-toggler span:nth-child(2) {
+        width: 25px;
+    }
+
+    .theame-header .custom-nav .navbar-toggler[aria-expanded="true"] span:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -9px;
+    }
+
+    .theame-header .custom-nav .navbar-toggler[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .theame-header .custom-nav .navbar-toggler[aria-expanded="true"] span:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 9px;
+    }
+
+    .theame-header .custom-nav .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        background-color: #ED9323;
+        text-align: center;
+        padding: 60px 0px;
+        box-shadow: -30px 0 30px rgb(0 0 0 / 10%);
+        transition: 0.5s;
+        opacity: 0;
+        z-index: 100;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    .theame-header .custom-nav .navbar-collapse {
+        width: 100%;
+    }
+
+    .theame-header .custom-nav .navbar-collapse.show {
+        right: 0;
+        opacity: 1;
+        z-index: 100;
+    }
+
+    .theame-header .custom-nav .nav-item {
+        margin-left: 0;
+        text-align: left;
+        border-bottom: 1px solid #fff;
+    }
+
+    .theame-header .custom-nav .nav-item .nav-link {
+        border: 1px solid transparent;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .hmg-bnnr {
+        padding-top: 40px;
+    }
+
+    .counter-innr img {
+        width: 45px;
+    }
+
+    .counter-innr h4 {
+        font-size: 16px;
+    }
+
+    .counter-innr {
+        margin-bottom: 1rem;
+    }
+
+    .off-txt {
+        font-size: 10px;
+        padding: 7px 5px;
+    }
+
+    .flight-lst-dtl li h5 {
+        font-size: 12px;
+    }
+
+    .flight-lst-dtl .img-60 {
+        height: 40px;
+        width: 40px;
+    }
+
+    .flight-lst-dtl .thm-shrt-btn {
+        padding: 4px 12px !important;
+    }
+
+    .fligh-dtl-tab .nav {
+    }
+
+    .fligh-dtl-tab .nav .nav-link {
+        font-size: 12px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .stops-btn button {
+        padding: 4px 0px;
+        margin-right: 5px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .heading {
+        font-size: 22px;
+    }
+
+    .booking-departure h4 {
+        font-size: 18px;
+    }
+
+    .booking-departure h4 a {
+        font-size: 11px;
+    }
+
+    .booking-departure .cards .laguage span {
+        font-size: 12px;
+    }
+
+    .heading.shrt {
+        font-size: 18px;
+    }
+
+    .trvl h5, .trvl.cards a {
+        font-size: 13px;
+    }
+
+    .flight-dtl-sec {
+        margin-top: 1rem;
+    }
+
+    .hmg-innr-bnnr {
+        padding: 20px 0;
+    }
+
+    .trvl-rgt-bar {
+        margin-top: 1rem;
+    }
+
+}
+
+@media (max-width:767px) {
+    .theame-header .tp-header .tp-header-social a {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        margin-left: 0px;
+        font-size: 13px;
+    }
+
+    .theame-header .tp-header-rgt li a {
+        font-size: 13px;
+        padding: 0px 3px;
+    }
+
+    .theame-header .tp-header-rgt li button {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .tp-header-rgt {
+        text-align: right;
+    }
+
+    .contnt-head {
+        font-size: 18px;
+    }
+
+    .offr-sec .nav .offr-tb-item {
+        margin-right: 8px;
+    }
+
+    .offr-sec .nav .offr-tb-item .offr-tb-btn {
+        padding: 4px 18px;
+        font-size: 12px;
+    }
+
+    .trpbook .owl-prev .arrows, .trpbook .owl-next .arrows {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+
+    .faq-sec .accordion .accordion-button {
+        font-size: 15px;
+    }
+
+    .booking-departure .cards li .dep-name {
+        padding-left: 65px;
+    }
+
+    .booking-departure .cards li span.dep-time::before {
+        top: 22px;
+        height: calc(100% - -66px);
+    }
+
+    .booking-departure .cards li span.dep-time::after {
+        background: #fff;
+    }
+
+    .top-img {
+        top: -42%;
+    }
+
+}
+
+@media (max-width:575px) {
+    .hmg-bnnr-tpbtn li a {
+        padding: 8px 13px;
+        margin-right: 5px;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .trpbook .owl-prev .arrows, .trpbook .owl-next .arrows {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        font-size: 13px;
+    }
+
+    .tp-header-lft {
+        display: none !important;
+    }
+
+    .tp-header-rgt {
+        text-align: center;
+    }
+
+    .theame-header .tp-header-rgt li a {
+        padding: 0px 8px;
+    }
+
+    .offr-tb-innr-img img {
+        height: 140px;
+    }
+
+    .offr-tb-innr-contnt h5 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .offr-tb-innr-contnt p {
+        font-size: 12px;
+        margin-bottom: 1rem;
+    }
+
+    .offr-sec .owl-theme .owl-nav {
+        top: -33px;
+    }
+
+    .offr-sec .owl-theme .owl-nav button span {
+        height: 30px;
+        width: 40px;
+        line-height: 30px;
+    }
+
+    .offr-sec .nav .offr-tb-item .offr-tb-btn {
+        padding: 4px 12px;
+        margin-bottom: 5px;
+    }
+
+    .hmg-tab .nav .nav-item .nav-link {
+        padding: 5px 7px;
+    }
+
+    .hmg-tab .nav .nav-item .nav-link span {
+        height: 15px;
+        width: 15px;
+    }
+
+    .hmg-tab .nav .nav-item .nav-link span:after {
+        width: 10px;
+        height: 10px;
+        top: 1.5px;
+    }
+
+    .booking-departure .cards li .dep-name {
+        font-size: 10px;
+    }
+
+    .booking-departure .cards li.total-time p span {
+        top: -40px;
+        left: 64px;
+        font-size: 10px;
+    }
+
+    .booking-departure .cards .laguage {
+        flex-wrap: wrap;
+    }
+
+    .booking-departure .cards .laguage span {
+        margin-bottom: 5px;
+    }
+
+    .partner-img img {
+        width: 100% !important;
+        height: 170px;
+    }
+
+    .hmg-bnnr h1, .hmg-innr-bnnr h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .aeroplane-seat-rgt {
+        margin: 1rem 0;
+    }
+
+    .top-img, .bottom-img {
+        display: none;
+    }
+
+}
+
+/*responsive-css-end*/

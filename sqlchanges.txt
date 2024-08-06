@@ -1,0 +1,3 @@
+ALTER TABLE `charges` ADD `type` VARCHAR(255) NULL AFTER `charges_type`;
+flights table ADD
+
