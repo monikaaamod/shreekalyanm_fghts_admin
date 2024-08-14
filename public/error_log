@@ -1,1 +1,2 @@
 [05-Jan-2024 06:08:29 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Frontend\IndexController::airplane() in /home/dtfnh342d7js/public_html/flights/app/Http/Controllers/Frontend/IndexController.php on line 83
+[06-Aug-2024 10:40:53 UTC] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 333451264 bytes) in /home/vv7sf4g3fljf/public_html/shreekalyanam_flights/app/Http/Controllers/Admin/BookingController.php on line 118

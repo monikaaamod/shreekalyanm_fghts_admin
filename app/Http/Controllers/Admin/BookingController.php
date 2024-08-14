@@ -21,6 +21,7 @@ use App\Http\Controllers\BaseController;
 use App\Http\Traits\ActionButtonsTrait;
 use App\Http\Traits\StatusColumnTrait;
 use App\Http\Traits\ImageColumnTrait;
+use PDF;
 
 class BookingController extends BaseController
 {
@@ -105,6 +106,19 @@ class BookingController extends BaseController
         // print_r($data['FlightDetailArray']);exit;
         return view('admin.bookings.view_ticket',$data);
     }
+    
+    public function TicketPdf($rootkey)
+    {
+        $data['booking_root'] = BookingRoot::with('root_ticket')->find($rootkey);
+        $data['booking'] = Booking::with('booking_root','booking_travellers')->where('booking_id',$data['booking_root']->booking_id)->first();
+        $data['FlightDetailArray'] = unserialize(base64_decode($data['booking']->flightsDataArray));
+        
+        $pdf = PDF::loadView('admin.bookings.ticket', $data);
+        $dom_pdf = $pdf->stream('pdf_file.pdf');
+        return $dom_pdf;
+        
+        return view('admin.bookings.ticket',$data);
+    }
 
 
     public function search_bookings()
@@ -177,7 +191,7 @@ class BookingController extends BaseController
             $ticket->save();
         }
         
-        $bookingdetail = BookingRoot::where('booking_root',$request->booking_root)->where('booking_id',$request->booking_id)->first();
+        $bookingdetail = BookingRoot::where('bookingroot',$request->booking_root)->where('booking_id',$request->booking_id)->first();
         $bookingdetail->pnr_no = $request->pnr_no;
         $bookingdetail->save();
         

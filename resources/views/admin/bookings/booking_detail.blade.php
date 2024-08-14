@@ -907,8 +907,9 @@ table.table.border.ticket_table th {
                                                                         <td>{{$rootkey->flight_depart_date}}</td>
                                                                         <td>{{$rootkey->flight_depart_date}}</td>
                                                                         <td>{{$booking->status}}</td>
-                                                                        <td><i class="menu-icon icon mdi mdi-download"></i>
+                                                                        <td>
                                                                             <a target="_blank" href="{{route('admin.booking.view_ticket',$rootkey->id)}}"><i class="menu-icon icon mdi mdi-eye"></i></a>
+                                                                            <a target="_blank" href="{{route('admin.booking.pdf_ticket',$rootkey->id)}}"><i class="menu-icon icon mdi mdi-download"></i><a></a>
                                                                         </td>
                                                                     </tr>
                                                                 @endif

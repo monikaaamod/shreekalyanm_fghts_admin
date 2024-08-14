@@ -430,6 +430,7 @@ Route::group([], function () {
             Route::get('/admin/bookings/card', [BookingController::class,'booking_card'])->name('admin.booking.card')->middleware('permission:Booking List');
             Route::post('/admin/create-ticket', [BookingController::class,'CreateTicket'])->name('admin.booking.create.ticket')->middleware('permission:Booking List');
             Route::get('/admin/view-ticket/{rootkey}', [BookingController::class,'ViewTicket'])->name('admin.booking.view_ticket')->middleware('permission:Booking List');
+            Route::get('/admin/pdf-ticket/{rootkey}', [BookingController::class,'TicketPdf'])->name('admin.booking.pdf_ticket')->middleware('permission:Booking List');
     
         });
 
